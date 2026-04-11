@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>pruebas</title>
-</head>
+    <meta charset="UTF-8">
+    <title>Para Camila 💖</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #0a8dffc6,#0a8dffc6 );
+            color: rgba(255, 255, 255, 0.913);
+            text-align: center;
+        }
 
+        header {
+            padding: 50px 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: latido 1s infinite;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .mensaje {
+            font-size: 22px;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .boton {
+            background-color: white;
+            color: #007bf5;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #0451f7;
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
 <body>
-    <h1>holaaaaaa como ta
-    <img src="c:\Users\dilen\Downloads\Fond d'écran PC - TV Girl.jfif" alt="">
-<h1>¿como estas?
-    esta es mi pagina web y tratara sobre tv girl
-    tv girl es una de mis bandas inglesas favoritas y los escucho desde 2023 por el simple hecho de que estaba buscando musicas para descargar y vi un edit suyo en tik tok y desde ese momento es mi banda favorita.
-</h1>
-<h3>mis canciones favoritas son </h3>
-<h1>not allowed/
-    cigarrettes out the windows/
-    the blondies/
-    blue hair/
-    lovers rock/
-    y creo que esas serian todas, GRACIAS por su atencion.
-</h1>
-<h1>ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongolo ito mongoloito mongolo ito mongolo ito mongolo ito mongolo</h1>
+
+<header>
+    Para Chococrispi🥣
+</header>
+
+<div class="heart">❤️</div>
+
+<div class="mensaje">
+    Camila, desde que llegaste a mi todo es diferente he llegado hasta el punto que no puedo sacarte de mi mente, eres la unica persona con la llave mi amor por ti y la unica fuente   
+     TODO de ti me importa cada cualidad cada defecto(si es que realmente tienes😳)lo amo por que hace ser quien eres.  
+    No sé cómo explicarlo, pero simplemente… te amo. 💕
+</div>
+
+<br>
+
+<button class="boton" onclick="mostrarMensaje()">Haz clic aquí</button>
+
+<p id="extra"></p>
+
+<footer>
+    L
+</footer>
+
+<script>
+ function mostrarMensaje() {
+        for (let i = 0; i < 30; i++) {
+            let span = document.createElement("span");
+            span.innerHTML = "💖 Te amo 💖";
+            span.style.position = "absolute";
+            span.style.left = Math.random() * 100 + "vw";
+            span.style.top = Math.random() * 100 + "vh";
+            span.style.fontSize = "20px";
+            span.style.color = "white";
+
+            document.body.appendChild(span);
+        }
+    }
+</script>
+
 </body>
-</html>
 </html>
